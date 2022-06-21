@@ -91,7 +91,7 @@ body {
 
 /* page-2 */
 
-.page-2 {
+#page-2 {
   width: 21cm;
   height: 29.7cm;
   margin: 20px auto;
@@ -153,11 +153,16 @@ th {
 }
 
 @media print {
-  #page {
+  #page,
+  #page-2 {
     width: 21cm;
     height: 29.7cm;
-    margin: auto;
+    /* margin: auto; */
     /* margin: 30mm 45mm 30mm 45mm; */
+  }
+
+  .tille-page-2 {
+    padding: 0px 0 20px 0;
   }
 
   .hidden-print {
