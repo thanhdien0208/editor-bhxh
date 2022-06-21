@@ -8,6 +8,7 @@ body {
   font-family: "Times New Roman", Times, serif;
   font-size: 12pt;
   background: #f5f7f9;
+  height: 100%;
 }
 #page {
   width: 21cm;
@@ -132,7 +133,7 @@ th {
   display: block;
   text-align: center;
   width: 50%;
-  margin-left: 50%;
+  margin-left: 40%;
   margin-top: 40px;
 }
 
@@ -140,7 +141,7 @@ th {
 
 .hidden-print {
   position: fixed;
-  bottom: 2%;
+  top: 2%;
   right: 5%;
   padding: 10px 20px;
   border: none;
