@@ -1,0 +1,165 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 12pt;
+  background: #f5f7f9;
+}
+#page {
+  width: 21cm;
+  height: 29.7cm;
+  margin: 20px auto;
+  background: #fff;
+  padding: 28px 96px 96px 96px;
+}
+
+.titleBold {
+  font-weight: bold;
+}
+.titleItalic {
+  font-style: italic;
+}
+
+.textCenter {
+  text-align: center;
+}
+
+.header {
+  display: block;
+  text-align: center;
+  width: 50%;
+  margin-left: 50%;
+  margin-bottom: 30px;
+}
+
+.fullname {
+  text-transform: uppercase;
+}
+
+.section-1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.section-1 .chxh {
+  text-align: center;
+}
+
+.section-1 .chxh span {
+  border-bottom: 2px solid;
+  line-height: 2;
+}
+
+.section-2 .declaration,
+.section-2 .dear {
+  margin: 15px;
+}
+
+.list-content,
+.list-content .group {
+  display: flex;
+  align-items: center;
+}
+
+.section-5 {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 0;
+}
+
+.section-5 .footer-left {
+  width: 40%;
+}
+
+.section-5 .footer-right {
+  width: 60%;
+  margin-left: 15px;
+}
+
+.editable {
+  padding: 0 8px;
+}
+
+.is-editing {
+  outline: 2px red dashed;
+}
+
+/* page-2 */
+
+.page-2 {
+  width: 21cm;
+  height: 29.7cm;
+  margin: 20px auto;
+  background: #fff;
+  /* padding: 28px 96px 96px 96px; */
+}
+
+.tille-page-2 {
+  padding: 100px 0 20px 0;
+}
+
+.content-page-2 {
+  padding: 0 96px;
+}
+
+table,
+th,
+td {
+  border: 1px solid;
+}
+
+.table-info {
+  margin: 15px 30px;
+}
+.table-info table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+td {
+  padding: 12px;
+}
+
+th {
+  text-align: center;
+}
+
+.footer-2 .sign-2 {
+  display: block;
+  text-align: center;
+  width: 50%;
+  margin-left: 50%;
+  margin-top: 40px;
+}
+
+/* Print */
+
+.hidden-print {
+  position: fixed;
+  bottom: 2%;
+  right: 5%;
+  padding: 10px 20px;
+  border: none;
+  outline: none;
+  background: red;
+  color: white;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+@media print {
+  #page {
+    width: 21cm;
+    height: 29.7cm;
+    margin: auto;
+    /* margin: 30mm 45mm 30mm 45mm; */
+  }
+
+  .hidden-print {
+    display: none;
+  }
+}
